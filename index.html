@@ -40,7 +40,8 @@
       h6 {
         font-family: "Libre Baskerville", serif;
       }
-      p {
+      p,
+      span {
         font-family: "Quicksand", sans-serif;
       }
       .font-libre-baskerville {
@@ -51,6 +52,12 @@
       }
       .primary-color {
         color: #87b700;
+      }
+      .divider-menu {
+        height: 4px;
+        width: 24px;
+        margin: 4px auto;
+        background: #87b700;
       }
     </style>
   </head>
@@ -152,7 +159,9 @@
     </header>
     <main>
       <!-- About Section -->
-      <section class="flex flex-col items-center gap-2 max-w-screen-xl mx-auto">
+      <section
+        class="flex flex-col items-center gap-2 max-w-screen-xl mx-auto mb-32"
+      >
         <h2 class="text-[42px] font-bold">
           About <span class="primary-color">Us</span>
         </h2>
@@ -185,6 +194,206 @@
         </div>
         <div>
           <img src="Images/Sheif.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Our Menu Section -->
+      <section
+        class="flex flex-col items-center gap-2 bg-[#F8F9FA] px-40 py-16"
+      >
+        <h2 class="text-[42px] font-bold">Our Menu</h2>
+        <p class="font-medium text-lg flex flex-col items-center">
+          <span
+            >Explore Our Delicious Menu Selections and Delight in a Fusion of
+            Flavors. From</span
+          >
+          <span>Classic</span>
+          <span
+            >Favorites to Chef's Special Creations, Every Dish Tells a
+            Story.</span
+          >
+        </p>
+        <ul class="flex justify-center gap-16 mt-16 text-xl font-bold">
+          <li><a href="#">Desserts</a></li>
+          <div>
+            <li class="primary-color"><a href="#">Appetizer</a></li>
+            <hr class="divider-menu" />
+          </div>
+          <li><a href="#">Beverages</a></li>
+        </ul>
+        <div class="mt-48 grid grid-cols-3 gap-20">
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item1.png"
+              alt="Shoes"
+              class="rounded-xl w-full absolute top-[-130px] left-3"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-24">
+              <div class="flex justify-between w-full">
+                <span class="flex flex-col items-start w-full">
+                  <p class="text-[22px] font-bold">Caprese Salad</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    Fresh mozzarella cheese, ripe tomatoes
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$9.99</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item2.png"
+              alt="Shoes"
+              class="rounded-xl w-[400px] absolute top-[-130px] left-2"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-24">
+              <div class="flex justify-between w-full">
+                <span class="flex flex-col items-start w-full">
+                  <p class="text-[22px] font-bold">Lettuce Fried Egg</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    Green tomato slices coated in cornmeal and fried.
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$7.00</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item3.png"
+              alt="Shoes"
+              class="rounded-xl w-full absolute top-[-130px] left-5"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-24">
+              <div class="flex justify-between w-full">
+                <span class="flex flex-col items-start w-full">
+                  <p class="text-[22px] font-bold">Crispy Squid Salad</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    A vibrant mix of fresh greens, dressed with a tangy
+                    vinaigrette.
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$6.99</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-40 grid grid-cols-3 gap-20">
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item4.png"
+              alt="Shoes"
+              class="rounded-xl w-full absolute top-[-130px] left-1"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-28">
+              <div class="flex justify-between w-full">
+                <span class="flex flex-col items-start">
+                  <p class="text-[22px] font-bold">Greek Salad</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    A vibrant mix of crisp lettuce, juicy tomatoes.
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$8.00</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item5.png"
+              alt="Shoes"
+              class="rounded-xl w-full absolute top-[-130px] left-3"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-28">
+              <div class="flex justify-between">
+                <span class="flex flex-col items-start w-full">
+                  <p class="text-[22px] font-bold">Marinated Olives</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    Olives marinated in fragrant herbs, zesty & extra virgin
+                    olive oil
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$10.00</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card bg-base-100 shadow-2xl relative flex flex-col items-center rounded-[50px]"
+          >
+            <img
+              src="Images/item6.png"
+              alt="Shoes"
+              class="rounded-xl w-full absolute top-[-130px] left-3"
+            />
+            <div class="card-body p-5 items-center w-full text-center mt-28">
+              <div class="flex justify-between w-full">
+                <span class="flex flex-col items-start">
+                  <p class="text-[22px] font-bold">Spicy Edamame</p>
+                  <p class="text-xs w-[90%] font-medium text-left">
+                    Edamame pods sautéed with spicy chili oil.
+                  </p>
+                </span>
+                <span class="w-10">
+                  <img class="w-full" src="Images/love.svg" alt="" />
+                </span>
+              </div>
+              <div class="flex justify-between items-center w-full mt-5">
+                <span class="text-xl font-bold">$5.00</span>
+                <button class="bg-[#87B700] text-white w-[36px] rounded-xl">
+                  <span class="text-4xl font-medium">+</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
